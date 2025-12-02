@@ -1,0 +1,50 @@
+openapi: 3.1.0
+info:
+  title: Admin API
+  description: API for Admin dashboard and members list.
+  version: 0.1.9
+
+servers:
+  - url: http://localhost:3000/api/
+    description: Local development server
+
+paths:
+  /members:
+    get:
+      summary: Returns a list of members
+      description: Fetches all member records from the database
+      responses:
+        "200":
+          description: List of members
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: object
+        "500":
+          description: Error fetching data
+  #dashboard
+  /dashboard:
+    get:
+      summary: Returns dashboard data
+      description: Fetches aggregated data for the admin dashboard
+      responses:
+        "200":
+          description: Dashboard data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+        "500":
+          description: Error fetching dashboard data

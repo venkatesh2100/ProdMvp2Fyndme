@@ -1,0 +1,151 @@
+[
+  {
+    "timeFrame": "daily",
+    "stats": [
+      { "title": "New Users", "value": 12, "change": "+2.3%" },
+      { "title": "Active Users", "value": 278, "change": "-1.2%" },
+      { "title": "Total Profiles", "value": 1200, "change": "+0.5%" }
+    ],
+    "traffic": [
+      { "country": "US", "value": 40 },
+      { "country": "India", "value": 60 },
+      { "country": "Japan", "value": 25 }
+    ],
+    "portfolio": [
+      { "name": "Personal", "value": 90 },
+      { "name": "Academic", "value": 70 }
+    ],
+    "deviceSessions": [
+      { "name": "Desktop", "value": 700 },
+      { "name": "Mobile", "value": 250 },
+      { "name": "Tablet", "value": 150 }
+    ],
+    "visitorType": [
+      { "name": "Returning", "value": 100 },
+      { "name": "New", "value": 50 }
+    ]
+  },
+  {
+    "timeFrame": "weekly",
+    "stats": [
+      { "title": "New Users", "value": 210, "change": "+5.0%" },
+      { "title": "Active Users", "value": 2978, "change": "+1.8%" },
+      { "title": "Total Profiles", "value": 10340, "change": "+3.2%" }
+    ],
+    "traffic": [
+      { "country": "US", "value": 150 },
+      { "country": "India", "value": 180 },
+      { "country": "Japan", "value": 140 },
+      { "country": "Canada", "value": 120 }
+    ],
+    "portfolio": [
+      { "name": "Personal", "value": 250 },
+      { "name": "Academic", "value": 210 },
+      { "name": "Corporate", "value": 180 }
+    ],
+    "deviceSessions": [
+      { "name": "Desktop", "value": 700 },
+      { "name": "Mobile", "value": 250 },
+      { "name": "Tablet", "value": 150 }
+    ],
+    "visitorType": [
+      { "name": "Returning", "value": 100 },
+      { "name": "New", "value": 50 }
+    ]
+  },
+  {
+    "timeFrame": "monthly",
+    "stats": [
+      { "title": "New Users", "value": 950, "change": "+12.3%" },
+      { "title": "Active Users", "value": 10810, "change": "+6.1%" },
+      { "title": "Total Profiles", "value": 25120, "change": "+4.7%" }
+    ],
+    "traffic": [
+      { "country": "US", "value": 300 },
+      { "country": "India", "value": 400 },
+      { "country": "Japan", "value": 220 },
+      { "country": "Mexico", "value": 250 }
+    ],
+    "portfolio": [
+      { "name": "Personal", "value": 700 },
+      { "name": "Academic", "value": 600 },
+      { "name": "Corporate", "value": 500 },
+      { "name": "Creative", "value": 300 }
+    ],
+    "deviceSessions": [
+      { "name": "Desktop", "value": 700 },
+      { "name": "Mobile", "value": 250 },
+      { "name": "Tablet", "value": 150 }
+    ],
+    "visitorType": [
+      { "name": "Returning", "value": 100 },
+      { "name": "New", "value": 50 }
+    ]
+  },
+  {
+    "timeFrame": "yearly",
+    "stats": [
+      { "title": "New Users", "value": 11200, "change": "+15.0%" },
+      { "title": "Active Users", "value": 60410, "change": "+6.3%" },
+      { "title": "Total Profiles", "value": 80000, "change": "+7.1%" }
+    ],
+    "traffic": [
+      { "country": "US", "value": 1200 },
+      { "country": "India", "value": 1500 },
+      { "country": "Japan", "value": 1000 },
+      { "country": "Mexico", "value": 900 },
+      { "country": "Australia", "value": 850 }
+    ],
+    "portfolio": [
+      { "name": "Personal", "value": 900 },
+      { "name": "Academic", "value": 700 },
+      { "name": "Corporate", "value": 600 },
+      { "name": "Business", "value": 500 },
+      { "name": "Creative", "value": 300 }
+    ],
+    "deviceSessions": [
+      { "name": "Desktop", "value": 700 },
+      { "name": "Mobile", "value": 250 },
+      { "name": "Tablet", "value": 150 }
+    ],
+    "visitorType": [
+      { "name": "Returning", "value": 100 },
+      { "name": "New", "value": 50 }
+    ]
+  },
+  {
+    "timeFrame": "till date",
+    "stats": [
+      { "title": "New Users", "value": 50000, "change": "+25.0%" },
+      { "title": "Active Users", "value": 100000, "change": "+10.0%" },
+      { "title": "Total Profiles", "value": 150000, "change": "+15.0%" }
+    ],
+    "traffic": [
+      { "country": "US", "value": 5000 },
+      { "country": "India", "value": 6000 },
+      { "country": "Japan", "value": 4000 },
+      { "country": "Canada", "value": 3500 },
+      { "country": "UK", "value": 3000 }
+    ],
+    "portfolio": [
+      { "name": "Personal", "value": 2000 },
+      { "name": "Academic", "value": 1800 },
+      { "name": "Corporate", "value": 1500 },
+      { "name": "Business", "value": 1300 },
+      { "name": "Matrimonial", "value": 900 },
+      { "name": "Creative", "value": 700 },
+      { "name": "Volunteer", "value": 600 },
+      { "name": "Lifestyle", "value": 500 },
+      { "name": "Professional", "value": 400 }
+    ],
+    "deviceSessions": [
+      { "name": "Desktop", "value": 700 },
+      { "name": "Mobile", "value": 250 },
+      { "name": "Tablet", "value": 150 }
+    ],
+    "visitorType": [
+      { "name": "Returning", "value": 100 },
+      { "name": "New", "value": 50 }
+    ]
+  }
+]

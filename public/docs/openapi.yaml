@@ -1,0 +1,143 @@
+openapi: 3.1.0
+info:
+  title: Fydme Admin API
+  description: Backend API documentation for Fydme’s Admin Dashboard, Members API, and Metrics system.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000/api/
+    description: Local development server
+
+paths:
+  /members:
+    get:
+      summary: Fetch all platform members
+      description: Returns user/member data for the admin tools and user-management panel.
+      responses:
+        "200":
+          description: List of members
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        _id:
+                          type: string
+                        Member Name:
+                          type: string
+                        Username:
+                          type: string
+                        No:
+                          type: object
+                          properties:
+                            Of Portfolios:
+                              type: integer
+                        ID Verification:
+                          type: string
+                        Portfolio Verification:
+                          type: string
+                        Location:
+                          type: string
+                        Size (KB):
+                          type: number
+                        Subscription:
+                          type: string
+                        portfolios:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              status:
+                                type: string
+        "500":
+          description: Error fetching members data
+
+  /dashboard:
+    get:
+      summary: Fetch dashboard analytics
+      description: Returns aggregated admin dashboard analytics including users, traffic, engagement, device sessions, and portfolio insights.
+      parameters:
+        - in: query
+          name: timeFrame
+          required: false
+          schema:
+            type: string
+            enum:
+              - "daily"
+              - "weekly"
+              - "monthly"
+              - "yearly"
+          description: "Time frame filter (default: yearly)"
+      responses:
+        "200":
+          description: Dashboard data returned successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      _id:
+                        type: string
+                      timeFrame:
+                        type: string
+                      stats:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            title:
+                              type: string
+                            value:
+                              type: number
+                            change:
+                              type: string
+                      traffic:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            country:
+                              type: string
+                            value:
+                              type: number
+                      portfolio:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            name:
+                              type: string
+                            value:
+                              type: number
+                      deviceSessions:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            name:
+                              type: string
+                            value:
+                              type: number
+                      visitorType:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            name:
+                              type: string
+                            value:
+                              type: number
+        "500":
+          description: Error fetching dashboard data
